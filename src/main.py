@@ -633,7 +633,7 @@ async def minesweeper(interaction: discord.Interaction):
 
 '''
 
-from python.confirm_delete_view import ConfirmDeleteView  # 分割したクラスをインポート
+from confirm_delete_view import ConfirmDeleteView  # 分割したクラスをインポート
 @tree.command(name="delete_directory", description="指定したディレクトリを削除します（空でなくても確認後に削除）")
 @discord.app_commands.describe(directory="削除したいディレクトリのパス")
 async def rmdir(interaction: discord.Interaction, directory: str):
