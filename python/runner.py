@@ -8,7 +8,7 @@ env = os.environ.copy()
 
 while True:
     print("Botを起動中...")
-    process = subprocess.Popen(["python", "discordbot.py"], env=env)
+    process = subprocess.Popen(["python", "main.py"], env=env)
     exit_code = process.wait()
     print("Botが終了しました。5秒後に再起動します...")
     time.sleep(5)
